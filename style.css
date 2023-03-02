@@ -1,0 +1,160 @@
+:root {
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    --lightSlateBlueBack: hsl(252, 100%, 67%);
+    --lightRoyalBlueBack: hsl(241, 81%, 54%);
+    --violetBlueCircle: hsla(256, 72%, 46%, 1);
+    --persianBlueCircle: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+    --fontFamily: 'Hanken Grotesk', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fontFamily);
+    font-size: 18px;
+}
+main{
+    background-image: linear-gradient(var(--lightSlateBlueBack), var(--lightRoyalBlueBack));
+    color: var(--white);
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+main h1{
+    opacity: 50%;
+    font-size: 15px;
+    padding: 1em;
+}
+#circle{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: linear-gradient(var(--lightRoyalBlueBack), var(--lightSlateBlueBack));
+    border-radius: 50%;
+    padding: 2em;
+   height: 100%;
+    width: 45%;
+}
+#circle h2{
+    font-size: 3em;
+}
+#circle h6{
+    font-size: 0.8em;
+    opacity: 50%;
+}
+main h3{
+    margin-top: 0.6em;
+}
+main p{
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    opacity: 70%;
+    padding: 1em;
+}
+section{
+    border-radius: 18px;
+    padding: 0.4em;
+}
+section h2{
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 70%;
+    color: var(--darkGrayBlue);
+    margin-bottom: 0.8em;
+}
+#summaryCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#reactionCont, #memoryCont, #verbalCont, #visualCont{
+   width: 80%;
+   border-radius: 15px;
+   margin: 0.3em;
+   padding: 1em;
+   display: grid;
+   grid-template-columns: 1fr 5fr 0fr 1fr;
+   gap: 1em;
+}
+#reactionCont{
+    background-color: hsla(0, 100%, 67%, 0.5);  
+}
+#reactionCont h3{
+    color: var(--lightRed);
+}
+#react1{
+    display: flex;
+    flex-direction: row;
+}
+#memoryCont{
+    background-color: hsla(39, 100%, 56%, 0.5);
+}
+#memoryCont h3{
+    color: var(--orangeyYellow);
+}
+#verbalCont{
+    background-color: hsla(166, 100%, 37%, 0.5);
+}
+#verbalCont h3{
+    color: var(--greenTeal);
+}
+#visualCont{
+    background-color: hsla(234, 85%, 45%, 0.5);
+}
+#visualCont h3{
+    color: var(--cobaltBlue);
+}
+#reactionCont h4, #memoryCont h4, #visualCont h4, #verbalCont h4{
+    font-size: 16px;
+}
+#reactionCont h5, #memoryCont h5, #visualCont h5, #verbalCont h5{    
+    font-size: 16px;
+    opacity: 50%;
+}
+button{
+    margin-top: 1em;
+    background-color: var(--darkGrayBlue);
+    color: var(--white);
+    border: none;
+    padding: 1.2em;
+    width: 80%;
+    text-align: center;
+    border-radius: 25px;
+}
+button:hover{
+    background-color: var(--greenTeal);
+    color: var(--lightRed);
+}
+.attribution{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--lightLavender);
+    color: var(--darkGrayBlue);
+}
+@media screen and (min-width: 768px){
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-block: 4em;
+    }
+   main{
+    border-radius: 25px;
+   }
+   #summaryCont{
+   
+   }
+}
