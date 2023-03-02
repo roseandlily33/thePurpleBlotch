@@ -11,20 +11,19 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [Built with](#built-with)
 - [Author](#author)
 
-
 ### The challenge
-
 Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-Coming Soon
+
+![Screenshot 2023-03-02 at 11 05 56 AM](https://user-images.githubusercontent.com/109821108/222468257-ec4b5ba3-740e-40b1-81d8-201c46bafdeb.png)
 
 
 ### Links
-Coming Soon
+https://roseandlily33.github.io/thePurpleBlotch/
 
 ## My process
 First I started off with the mobile first responsive design layout, then I built the top/left hand side portion which is the all purple with the circle number. After I moved on to the summary, and I had noticed that there was a json file, and that you could dynamically import those through there, which was a bit of a challenge since I have only worked with server side API's, and not with a local JSON file it was a bit different, but a good experience none the less. First I made the containers and styled them how I wanted, and then moved into the JavaScript file to create them dynamically. I selected each of the boxes, then created each of the elements and put the selected data[#].element selected to select each of the items to display it on the screen. Then I moved on to the desktop layout. 
