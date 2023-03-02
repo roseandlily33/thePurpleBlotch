@@ -35,14 +35,16 @@ main h1{
     padding: 1em;
 }
 #circle{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     background-image: linear-gradient(var(--lightRoyalBlueBack), var(--lightSlateBlueBack));
     border-radius: 50%;
-    padding: 2em;
-   height: 100%;
-    width: 45%;
+    width: 50%;
+    height: 50%;
+    padding: 2.5em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
 }
 #circle h2{
     font-size: 3em;
@@ -63,13 +65,16 @@ main p{
 section{
     border-radius: 18px;
     padding: 0.4em;
+    background-color: var(--paleBlue);
+    border-radius: 25px;
 }
 section h2{
     font-weight: 400;
     font-size: 18px;
-    opacity: 70%;
     color: var(--darkGrayBlue);
     margin-bottom: 0.8em;
+    padding-inline: 2em;
+    padding-block: 0.5em;
 }
 #summaryCont{
     display: flex;
@@ -87,32 +92,36 @@ section h2{
    gap: 1em;
 }
 #reactionCont{
-    background-color: hsla(0, 100%, 67%, 0.5);  
+    background-color: hsla(0, 100%, 67%, 0.1);  
 }
 #reactionCont h3{
     color: var(--lightRed);
+    font-weight: 200;
 }
 #react1{
     display: flex;
     flex-direction: row;
 }
 #memoryCont{
-    background-color: hsla(39, 100%, 56%, 0.5);
+    background-color: hsla(39, 100%, 56%, 0.1);
 }
 #memoryCont h3{
     color: var(--orangeyYellow);
+    font-weight: 200;
 }
 #verbalCont{
-    background-color: hsla(166, 100%, 37%, 0.5);
+    background-color: hsla(166, 100%, 37%, 0.1);
 }
 #verbalCont h3{
     color: var(--greenTeal);
+    font-weight: 200;
 }
 #visualCont{
-    background-color: hsla(234, 85%, 45%, 0.5);
+    background-color: hsla(234, 85%, 45%, 0.1);
 }
 #visualCont h3{
     color: var(--cobaltBlue);
+    font-weight: 200;
 }
 #reactionCont h4, #memoryCont h4, #visualCont h4, #verbalCont h4{
     font-size: 16px;
@@ -126,10 +135,10 @@ button{
     background-color: var(--darkGrayBlue);
     color: var(--white);
     border: none;
-    padding: 1.2em;
+    padding: 1em;
     width: 80%;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 45px;
 }
 button:hover{
     background-color: var(--greenTeal);
@@ -149,12 +158,26 @@ button:hover{
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        padding-block: 4em;
+        padding-block: 12em;
     }
    main{
     border-radius: 25px;
+    height: 430px;
    }
-   #summaryCont{
-   
+   section{
+     box-shadow: 2px 10px 10px 7px hsla(252, 100%, 67%, 0.2);
    }
+   #circle{
+    height: 40%;
+    margin-bottom: 2em;
+   }
+   main h3{
+    font-size: 25px;
+   }
+   main p{
+    padding: 1em;
+    margin: 1em;
+    line-height: 1.8em;
+   }
+
 }
